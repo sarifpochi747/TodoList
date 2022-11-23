@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  background: hsla(152, 100%, 50%, 1);
+  background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+}
+
+.header{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 50px;
+  color: white;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-input{
+  margin: 40px 0;
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.todo-input:focus{
+  outline: none;
+}
+.todo-submit{
+  width: 40px;
+  height: 40px;
+  margin: 40px 0;
+  background-color: rgb(235, 192, 2);
+  border: 1px solid hsla(152, 100%, 50%, 1);
+  color: white;
+}
+
+.todo-submit:hover{
+  cursor: pointer;
+  background-color: rgb(3, 199, 3);
+}
+
+.select{
+  margin: 40px 30px;
+}
+.select select{
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+}
+.select select:focus{
+  outline: none;
+}
+
+.todo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  border: none;
+  background-color: white;
+  width: 280px;
+  height: 50px;
+}
+ul{
+  margin: 0 0;
+  padding: 0;
+}
+.todo-item{
+  list-style: none;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 20px 20px;
+}
+
+#complete
+{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.btn-icon .complete-btn{
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: #00E717;
+  color: white;
+  cursor: pointer;
+}
+.btn-icon .uncomplete-btn{
+  border: none;
+  background-color: #FDA642;
+  height: 50px;
+  width: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-icon .complete-btn:hover{
+  background-color: #2EEEDB;
+}
+.btn-icon .uncomplete-btn:hover{
+  background-color: #2EEEDB;
+}
